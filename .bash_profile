@@ -21,14 +21,10 @@ alias gpgpid="ps aux | grep gpg-agent-info"
 alias sgpg="source ~/.gpg-agent-info"
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/beverly/Code/Google/google-cloud-sdk/path.bash.inc'
+source '/Users/beverly/Sandbox/Google/google-cloud-sdk/path.bash.inc'
 
 # The next line enables bash completion for gcloud.
-source '/Users/beverly/Code/Google/google-cloud-sdk/completion.bash.inc'
-
-# Increase length of history saved
-export HISTSIZE=10000
-export HISTCONTROL=ignoreboth
+source '/Users/beverly/Sandbox/Google/google-cloud-sdk/completion.bash.inc'
 
 # append to history file, don't overwrite it
 shopt -s histappend
@@ -36,6 +32,10 @@ shopt -s histappend
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS
 shopt -s checkwinsize
+
+# Increase length of history saved
+export HISTSIZE=10000
+export HISTCONTROL=ignoreboth
 
 # for cordova stuff
 export WORKSPACE='/Users/beverly/Code/ripcord-cordova-app-stuff/dash'

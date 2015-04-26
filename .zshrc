@@ -78,3 +78,31 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export CLICOLOR=1
+
+export PATH="${HOME}/Sources/github.com/arcanist/bin:${PATH}"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:${PATH}"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH="/usr/local/sbin:${PATH}"
+
+export EDITOR=vim
+
+alias activate=". /Users/beverly/Code/karmicapp/bin/activate"
+
+# Related to gpg problems                                                                            
+alias gpgstart="gpg-agent --daemon --enable-ssh-support --log-file /Users/beverly/.gpg-agent.log --w\
+rite-env-file ~/.gpg-agent-info"
+alias gpgpid="ps aux | grep gpg-agent-info"
+alias sgpg="source ~/.gpg-agent-info"
+
+# Increase length of history saved                                                                   
+export HISTSIZE=10000
+export HISTCONTROL=ignoreboth
+
+# for cordova stuff                                                                                  
+export WORKSPACE='/Users/beverly/Code/ripcord-cordova-app-stuff/dash'
+
+# virtualenvwrapper                                                                                  
+export WORKON_HOME="$HOME/Envs"
+source "/usr/local/bin/virtualenvwrapper.sh"
